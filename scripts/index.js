@@ -1,7 +1,7 @@
 var allPosts = document.getElementById("allPosts");
 
 allPosts.onclick = function(){
-    window.location = "html/bloglist.html";
+    window.location = "html/postlist.html";
 }
 
 //CREATE POST
