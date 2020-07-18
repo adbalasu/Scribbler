@@ -1,0 +1,176 @@
+.Scribbler{
+    font-family: 'Montez', cursive; 
+    color:blue; 
+    font-weight:normal; 
+    position:relative; 
+    top: -15px;
+}
+.Subtitle{
+    font-family: 'Ubuntu Mono'; 
+    font-weight:normal; 
+    position: relative; 
+    top: -35px;
+}
+.HeaderButton{
+    background-color:blue;
+    color:white; 
+    text-align: center;
+    padding: 7px 14.8px; 
+    position:absolute; 
+    top:0.8em; right:7.5em; 
+    border-color: -internal-light-dark-color(blue white);
+}
+.SignInPosition{
+    top:0.8em; 
+    right:0.8em;
+}
+
+/*Sign Up Model*/
+ /* The Modal (background) */
+ .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .signup-modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 20%; /* Could be more or less, depending on screen size */
+
+  }
+
+  .get-started{
+      position: relative;
+      font-family: 'Arial' ;
+      font-weight: 100;
+      top:-15px;
+      color: rgb(128,128,128) ;
+  }
+  
+  .horizontal-line{
+      position: relative;
+      top:-28px;
+  }
+ /* The Sign UpClose Button */
+.signup-close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .signup-close:hover,
+  .signup-close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .signup-form{
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    top:-20px;
+    border-bottom: 20% ;
+
+  }
+  label{
+      padding-bottom: 0.6pc;
+      font-family: 'Arial';
+  }
+
+  input{
+      background-color: rgba(195, 195, 195, 0.4);
+      height: 35px;
+      border: blue;
+
+  }
+
+  .signup-btn{
+      background-color: rgb(23, 180, 54,0.8);
+      color: rgba(255, 255, 255, 0.75);
+      justify-content: center;
+      position: relative;
+      top:15px;
+      text-align: center;
+      font-weight: normal;
+      font-size: medium;
+      height: 40px;
+      border: none;
+  }
+
+  
+/*Sign In Modal*/
+
+
+/* SignIn Modal Content/Box */
+.signin-modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 20%; /* Could be more or less, depending on screen size */
+
+  }
+
+  /* The SignIn Close Button */
+.signin-close {
+    color: #aaa;
+    float: right;
+    font-size: 26px;
+    font-weight: bold;
+  }
+
+
+  .signin-close:hover,
+  .signin-close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+  .welcome-back{
+    position: relative;
+    font-family: 'Arial' ;
+    font-weight: 100;
+    top:-15px;
+    color: rgb(128,128,128) ;
+    height: fit-content;
+}
+
+.signin-form{
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    top:-20px;
+    border-bottom: 20% ;
+
+  }
+  .signin-btn{
+    background-color: rgb(23, 180, 54,0.8);
+    color: rgba(255, 255, 255, 0.75);
+    justify-content: center;
+    position: relative;
+    top:15px;
+    text-align: center;
+    font-weight: normal;
+    font-size: medium;
+    height: 40px;
+    border: none;
+}
