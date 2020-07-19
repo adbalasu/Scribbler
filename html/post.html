@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- TODO: Include Font Awesome file here -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <!-- TODO: Include Google Fonts file here -->
+  <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet"/>
+  <link
+  href="https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="../styles/common.css" />
+  <link rel="stylesheet" href="../styles/post.css" />
+  <title>Posts</title>
+</head>
+</html>
+
+<body>
+    <header>
+    <h1 class = "Scribbler">ScriBBler</h1>
+    <h5 class = "Subtitle">Explore, Imagine, Create</h5>
+    <div><button id = "signUpButton" class="HeaderButton">Sign Up</button></div>
+        <!-- The Signup Modal -->
+            <div id="signUpModal" class="modal">
+            <!-- Signup Modal content -->
+                <div class="signup-modal-content">
+                    <h2 class="get-started">Get Started <span class="signup-close">
+                        &times;
+                        </span></h2>
+                    <hr class="horizontal-line">
+                    <form class="signup-form">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="  Enter your name" required><br>
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="username" placeholder="  Enter your username" required><br>
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder="  Enter your password" required><br>
+                        <label for="confirmpassword">Confirm Password</label>
+                        <input type="password" id="confirmpassword" name="confirmpassword" placeholder="  Re-enter your password" required><br>
+                        <button id="signUpSubmit" class="signup-btn">Sign Up</button>
+                    </form> 
+
+                </div>
+            </div> 
+
+    <div><button id="signInButton" class="HeaderButton SignInPosition ">Sign In</button></div>
+        <!-- The SignIn Modal -->
+            <div id="signInModal" class="modal">
+                <!-- Signin Modal content -->
+                    <div class="signin-modal-content">
+                        <h2 class="welcome-back">Welcome Back!<span class="signin-close">
+                            &times;
+                        </span></h2>
+                        <hr class="horizontal-line">
+                        <form class="signin-form">
+                            <label for="username">Username</label>
+                            <input type="text" id="username" name="username" placeholder="  Enter your username" required><br>
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" placeholder="  Enter your password" required><br>
+                            <button id="signInSubmit" class="signin-btn">Sign in</button>
+                        </form>
+                        <h5 style="text-align: center;">Not a member? <a href="#" id="signup-hyperlink" style="text-decoration: none;">Sign Up</a></h5>
+                    </div>
+            </div>
+        </header>
+      <section>
+        <div class="post-wrapper">
+          <p class="post-title" id="postTitle">abcd</p>
+          <div class="author-edit-wrapper">
+            <span id="author">Author</span>
+            <button class="btn btn-danger saved btn-common" id="editPost">
+              Edit <i class="fa fa-edit"></i>
+            </button>
+          </div>
+          <p class="post-content" id="postContent">
+            content daskd jasd kjoqwpdj asj dspa
+          </p>
+          <div class="like-wrapper">
+            <button class="btn btn-danger like-button btn-common">
+              <i class="fa fa-thumbs-up"></i>
+              Like
+            </button>
+            <p id="likeText">Be the first one to like this!</p>
+          </div>
+          <div class="comments-wrapper">
+            <textarea
+            name="comments"
+            id="commentBox"
+            placeholder="Leave a comment..."
+            ></textarea>
+            <button class="btn btn-danger comment-button btn-common">
+              Comment
+            </button>
+            <p class="all-comments-text">All Comments</p>
+            <div id="commentsWrapper"></div>
+          </div>
+        </div>
+      </section>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <script src="../scripts/common.js"></script>
+      <script src="../scripts/post.js"></script>
+    </body>
