@@ -3,119 +3,187 @@
 
 <head>
     <!-- TODO: Include Font Awesome file here -->
+    <script src="https://use.fontawesome.com/d788f48bea.js"></script>
+
     <!-- TODO: Include Google Fonts file here -->
+    <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="../styles/common.css">
+    <link rel="stylesheet" type="text/css" href="../styles/postlist.css">
 </head>
 
 <body>
     <!-- TODO: Include code for header here -->
+    <div>
+        
+        <h1 class = "Scribbler">ScriBBler</h1>
+        <h5 class = "Subtitle">Explore, Imagine, Create</h5>
+        <div><button id = "signUpButton" class="HeaderButton">Sign Up</button></div>
+            <!-- The Signup Modal -->
+                <div id="signUpModal" class="modal">
+                <!-- Signup Modal content -->
+                    <div class="signup-modal-content">
+                        <h2 class="get-started">Get Started <span class="signup-close">
+                            &times;
+                            </span></h2>
+                        <hr class="horizontal-line">
+                        <form class="signup-form">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="  Enter your name" required><br>
+                            <label for="username">Username</label>
+                            <input type="text" id="username" name="username" placeholder="  Enter your username" required><br>
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" placeholder="  Enter your password" required><br>
+                            <label for="confirmpassword">Confirm Password</label>
+                            <input type="password" id="confirmpassword" name="confirmpassword" placeholder="  Re-enter your password" required><br>
+                            <button id="signUpSubmit" class="signup-btn">Sign Up</button>
+                        </form> 
+
+                    </div>
+                </div> 
+
+        <div><button id="signInButton" class="HeaderButton SignInPosition ">Sign In</button></div>
+            <!-- The SignIn Modal -->
+                <div id="signInModal" class="modal">
+                    <!-- Signin Modal content -->
+                        <div class="signin-modal-content">
+                            <h2 class="welcome-back">Welcome Back!<span class="signin-close">
+                                &times;
+                            </span></h2>
+                            <hr class="horizontal-line">
+                            <form class="signin-form">
+                                <label for="username">Username</label>
+                                <input type="text" id="username" name="username" placeholder="  Enter your username" required><br>
+                                <label for="password">Password</label>
+                                <input type="password" id="password" name="password" placeholder="  Enter your password" required><br>
+                                <button id="signInSubmit" class="signin-btn">Sign in</button>
+                            </form>
+                            <h5 style="text-align: center;">Not a member? <a href="#" id="signup-hyperlink" style="text-decoration: none;">Sign Up</a></h5>
+                        </div>
+                </div>
 
     <!-- ATTENTION: The HTML code for the list of posts has been given to you. You can feel free to add/delete/modify this code. You need to write the proper CSS and JavaScript code corresponding to this page so that the result looks like the screenshots given to you in the Project Statement. -->
 
     <!-- list of all posts starts here -->
-    <div>
+    <div class="board" id="board">
 
         <!-- post 1 starts here -->
-        <div>
-            <div>
+        <div class="card" id="card">
+            <div class="item name">
                 <p>Srishti Gupta</p>
             </div>
 
-            <div>
+            <div class="item">
                 <div>
-                    <p>‘let’ me be a ‘const’(ant), not a ‘var’(iable)!</p>
-                    <span>
+                    <p class= "card-icon-color card-heading">‘let’ me be a ‘const’(ant), not a ‘var’(iable)!</p>
+                    <span class= "card-icon-color top-right">
                         <!-- TODO: Include Font Awesome icon for delete icon here -->
+                        <i class="fa fa-trash-o" aria-hidden="true"></i>
                     </span>
                 </div>
-                <p>Since JavaScript does not have any type-checking, either of these keywords can be used to declare a variable of any type (datatype) in JavaScript. Though all the three keywords are used for the same purpose, they are different.</p>
-                <span>
+                    <p class="three-line-display">Since JavaScript does not have any type-checking, either of these keywords can be used to declare a variable of any type (datatype) in JavaScript. Though all the three keywords are used for the same purpose, they are different.</p>
+                <span class="bottom-right card-icon-color">
                     <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
+                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
                 </span>
             </div>
         </div>
         <!-- post 1 ends here -->
 
         <!-- post 2 starts here -->
-        <div>
-            <div>
+        <div class="card" id="card2">
+            <div class="item name">
                 <p>Colby Fayock</p>
             </div>
 
-            <div>
+            <div class="item">
                 <div>
-                    <p>What is linting and how can it save you time?</p>
-                    <span>
+                    <p class= "card-icon-color card-heading">What is linting and how can it save you time?</p>
+                    <span class= "card-icon-color top-right">
                         <!-- TODO: Include Font Awesome icon for delete icon here -->
+                        <i class="fa fa-trash-o" aria-hidden="true"></i>
                     </span>
+                    
                 </div>
-                <p>One of the biggest challenges in software development is time. It’s something we can’t easily get more of, but linting can help us make the most out of the time we have.</p>
-                <span>
+                <p class="three-line-display">One of the biggest challenges in software development is time. It’s something we can’t easily get more of, but linting can help us make the most out of the time we have.</p>
+                <span class= "bottom-right card-icon-color">
                     <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
+                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
                 </span>
             </div>
         </div>
         <!-- post 2 ends here -->
 
         <!-- post 3 starts here -->
-        <div>
-            <div>
+        <div class="card" id="card3">
+            <div class="item name">
                 <p>Yazeed Bzadough</p>
             </div>
 
-            <div>
+            <div class="item">
                 <div>
-                    <p>How to Get More Views on Your Tech Blog</p>
-                    <span>
+                    <p class= "card-icon-color card-heading">How to Get More Views on Your Tech Blog</p>
+                    <span class= "card-icon-color top-right">
                         <!-- TODO: Include Font Awesome icon for delete icon here -->
+                        <i class="fa fa-trash-o" aria-hidden="true"></i>
                     </span>
+                    
                 </div>
-                <p>If you're a developer with a Twitter account, you've already seen everyone and their cat start a blog, YouTube channel, or Patreon. We all want to become stars, or at the very least, a recognizable name in the industry.</p>
-                <span>
+                <p class="three-line-display">If you're a developer with a Twitter account, you've already seen everyone and their cat start a blog, YouTube channel, or Patreon. We all want to become stars, or at the very least, a recognizable name in the industry.</p>
+                <span class= "bottom-right card-icon-color">
                     <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
+                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
                 </span>
             </div>
         </div>
         <!-- post 3 ends here -->
 
         <!-- post 4 starts here -->
-        <div>
-            <div>
+        <div class="card" id="card4">
+            <div class="item name">
                 <p>Cedd Burge</p>
             </div>
 
-            <div>
+            <div class="item">
                 <div>
-                    <p>How to write easily describable code</p>
-                    <span>
+                    <p class= "card-icon-color card-heading">How to write easily describable code</p>
+                    <span class= "card-icon-color top-right">
                         <!-- TODO: Include Font Awesome icon for delete icon here -->
+                        <i class="fa fa-trash-o" aria-hidden="true"></i>
                     </span>
+                    
                 </div>
-                <p>When code is not describable using words, most people have to do some mental mapping to turn it in to words. This wastes mental energy, and you run the risk of getting the mapping wrong. Different people will map to different words, which
+                <p class="three-line-display">When code is not describable using words, most people have to do some mental mapping to turn it in to words. This wastes mental energy, and you run the risk of getting the mapping wrong. Different people will map to different words, which
                     leads to confusion when discussing the code.</p>
-                <span>
+                <span class= "bottom-right card-icon-color">
                     <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
+                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
                 </span>
             </div>
         </div>
         <!-- post 4 ends here -->
 
         <!-- post 5 starts here -->
-        <div>
-            <div>
+        <div class="card" id="card5">
+            <div class="item name">
                 <p>Srishti Gupta</p>
             </div>
 
-            <div>
+            <div class="item">
                 <div>
-                    <p>Everything you should know about ‘module’ & ‘require’ in Node.js</p>
-                    <span>
+                    <p class= "card-icon-color card-heading">Everything you should know about ‘module’ & ‘require’ in Node.js</p>
+                    <span class= "card-icon-color top-right">
                         <!-- TODO: Include Font Awesome icon for delete icon here -->
+                        <i class="fa fa-trash-o" aria-hidden="true"></i>
                     </span>
+                    
                 </div>
-                <p>Node.js treats each JavaScript file as a separate module. For instance, if you have a file containing some code and this file is named xyz.js, then this file is treated as a module in Node, and you can say that you’ve created a module
+                <p class="three-line-display">Node.js treats each JavaScript file as a separate module. For instance, if you have a file containing some code and this file is named xyz.js, then this file is treated as a module in Node, and you can say that you’ve created a module
                     named xyz.</p>
-                <span>
+                <span class= "bottom-right card-icon-color">
                     <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
+                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
                 </span>
             </div>
         </div>
@@ -125,6 +193,7 @@
 
     </div>
     <!-- list of all posts ends here -->
+    <script src='../scripts/common.js'></script>
 </body>
 
 </html>

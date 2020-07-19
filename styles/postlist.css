@@ -1,0 +1,132 @@
+body{
+    background-color: #ffeedd;
+}
+
+
+.card{
+    width:100px;
+}
+
+.card-icon-color{
+    color: rgb(100, 99, 99);
+
+}
+
+.board{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+    
+
+}
+
+/*REFERENCE GRID*/
+.board > div {
+    flex : 0 50%;
+    /*border: black solid;*/
+    box-sizing:border-box;
+    
+
+}
+
+.card  {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row; 
+    padding-bottom:10px; 
+    padding-right:40px;
+    padding-left:40px;
+
+
+}
+
+
+/* REFERENCE GRID*/
+.card > div {
+     /*border :red solid;*/
+     margin-bottom: 10px;
+
+}
+
+.name{
+    word-spacing: 9999rem;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+.name ~ .name{
+    /* Undo last assignment */
+    word-spacing: unset;
+    display: table-caption;
+  }
+
+
+div.item:nth-of-type(odd){ 
+    flex: 0.3; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    font-family: Arial;
+    font-weight: bolder;
+    color: rgb(100, 99, 99);
+    border-radius: 20px 0 0 20px;
+
+
+} 
+
+div.item:nth-of-type(even){ 
+    padding-left:20px;
+    padding-right:20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex: 2; 
+    background-color: rgba(224, 222, 222, 0.829);
+    font-family: Arial;
+    color:black;
+    border-radius: 0 20px 20px 0;
+    width:70%;
+    
+} 
+
+div.item:nth-of-type(even):hover{
+    box-shadow:         11px 10px 10px 0px rgba(50, 50, 50, 0.25);
+}
+
+
+.three-line-display{
+    line-height: 1.1em;
+    height: 3.3em;
+    overflow: hidden;
+    position: relative;
+    float: left;
+    margin-top: 0.3em;
+
+
+}
+
+.card-heading{
+    position: relative;
+    float:left;
+    font-family: Arial;
+    font-size: 1.2em;
+    margin-top: 0.4em;
+}
+
+.trash-can{
+    position: absolute;
+    right: 0px;
+    
+}
+.top-right{
+    float:right;
+    position: relative;
+    top : 10px;
+ 
+}
+.bottom-right{
+    float:right;
+    align-self:flex-end;
+   }
