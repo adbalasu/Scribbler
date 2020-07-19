@@ -4,7 +4,7 @@ allPosts.onclick = function(){
     window.location = "html/postlist.html";
 }
 
-//CREATE POST
+//CREATE POST MODAL
 // Get the modal
 var createPostModal = document.getElementById("createPostModal");
 

@@ -57,7 +57,7 @@ signUpHyperLink.onclick = function(){
     modal.style.display = "block";
 }
 
-// Click Handlers below:
+// CLICK HANDLERS
 // When the user clicks anywhere outside of the modal, close it
 window.addEventListener("click", function(event) {
     if (event.target == signUpModal) {
@@ -67,15 +67,15 @@ window.addEventListener("click", function(event) {
       signInModal.style.display = "none";
     }
   });
-  // Open the modal Generic function
+  // Open Modal
   openModal = modal => {
     modal.style.display = "block";
   };
-  // Close the modal Generic function
+  //Close Modal
   closeModal = modal => {
     modal.style.display = "none";
   };
-  // On clicking sign up hyperlink inside sign in modal
+  //When SignUp hyperlink clicked
   signUpLink.onclick = function() {
     closeModal(signInModal);
     openModal(signUpModal);
