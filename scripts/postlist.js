@@ -2,16 +2,27 @@ var deletePostModal = document.getElementById("deletePostModal");
 var noDelete = document.getElementById("noDelete");
 var yesDelete = document.getElementById("yesDelete");
 
-// Get the button that opens the modal
+// Get button to open delete Modal
 var deleteIcons = document.querySelectorAll(".delete-icon");
 var deleteIconsArray = Array.from(deleteIcons);
 
-// Get the dot icons
+// Get the all dots
 var dots = document.querySelectorAll(".dots");
 var dotsArray = Array.from(dots);
 
-// Get the No button that closes the modal
-// var closeDeletePostModal = document.getElementById("closeDeletePostModal");
+//Update Session Storage and then redirect to posts page
+navigateToPost = postThread => {
+  var post = postThread.closest(".post");
+  var author = post.querySelector(".username p").textContent.trim();
+  var postTitle = post.querySelector(".title p").textContent.trim();
+  var postContent = post.querySelector(".content").textContent.trim();
+  sessionStorage.setItem("author", author);
+  sessionStorage.setItem("postTitle", postTitle);
+  sessionStorage.setItem("postContent", postContent);
+  window.location.href = "../html/post.html";
+};
+
+// Get No Button
 var selectedPost;
 openDeletePostModal = (deletePostModal, clickedIcon) => {
   selectedPost = "";
@@ -24,18 +35,8 @@ deletePost = () => {
   closeModal(deletePostModal);
 };
 
-// Updating Session storage before redirecting to post.html page to view the clicked post
-navigateToPost = postThread => {
-  var post = postThread.closest(".post");
-  var author = post.querySelector(".username p").textContent.trim();
-  var postTitle = post.querySelector(".title p").textContent.trim();
-  var postContent = post.querySelector(".content").textContent.trim();
-  sessionStorage.setItem("author", author);
-  sessionStorage.setItem("postTitle", postTitle);
-  sessionStorage.setItem("postContent", postContent);
-  window.location.href = "../html/post.html";
-};
-// Event Listeners
+
+//Declare Event Listeners
 deleteIconsArray.map(deleteIcon => {
   deleteIcon.addEventListener("click", e =>
     openDeletePostModal(deletePostModal, e.target)
